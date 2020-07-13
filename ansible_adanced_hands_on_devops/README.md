@@ -1,4 +1,4 @@
-Project of My Udemy Courses
+Final Project of Course Udemy Ansible Adanced Hands on Devops
 =========
 
 Install commons dependencies.
@@ -16,12 +16,12 @@ No variables.
 Dependencies
 ------------
 
-No dependencies.
+First step is to create Virtual Box using vagrant on vagrant folder.
 
 Example Playbook
 ----------------
 
-No example.
+Playbook is on assignments folder.
 
 License
 -------

@@ -1,0 +1,7 @@
+---
+flask_installers:
+  - flask
+  - flask-mysql
+app_web: "appy.py"
+app_home: "/opt"
+server_address: "0.0.0.0"

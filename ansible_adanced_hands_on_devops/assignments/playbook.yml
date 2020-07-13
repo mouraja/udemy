@@ -1,0 +1,12 @@
+- name: Deploy a web application
+  hosts: all
+  become: yes
+  tasks:
+    - include_role:
+        name: common
+    - include_role:
+        name: mysql_db
+      when: grupo == "base"
+    - include_role:
+        name: flask_web
+      when: grupo == "web"

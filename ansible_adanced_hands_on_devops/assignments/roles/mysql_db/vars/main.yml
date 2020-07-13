@@ -1,0 +1,12 @@
+---
+mysql_installers:
+  - mysql-server
+  - mysql-client
+
+dbname: "employee_db"
+
+user:
+  host: "%"
+  name: "db_user"
+  key: "Passw0rd"
+  mode: "*.*:ALL"

@@ -1,0 +1,4 @@
+---
+ansible_connection: ssh
+ansible_user: runner
+ansible_ssh_pass: "12345678"

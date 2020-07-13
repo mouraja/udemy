@@ -1,4 +1,4 @@
-Project of My Udemy Courses
+Playbook Conclude Devops Course
 =========
 
 Install commons dependencies.
@@ -21,7 +21,9 @@ No dependencies.
 Example Playbook
 ----------------
 
-No example.
+Use of this playbook:
+
+    ansible-playbook -i inventory playbook.yml
 
 License
 -------

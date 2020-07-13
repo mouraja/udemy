@@ -1,0 +1,5 @@
+---
+- name: Install Dependencies
+  apt:
+    state: present
+    name: "{{ common_packages }}"

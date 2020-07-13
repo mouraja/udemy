@@ -1,0 +1,23 @@
+- name: Provisioning Vagrant
+  hosts: all
+  become: yes
+
+  tasks:
+
+    - name: Create user
+      user: 
+        name: runner
+        comment: User to test ansible
+        group: users
+        password: "{{ '12345678' | password_hash('sha512') }}"
+        shell: /bin/bash
+        state: present
+
+    - name: Copy sudoers
+      copy:
+        src: sudo_runner
+        dest: /etc/sudoers.d/
+        owner: root
+        group: root
+        mode: "0440"
+        validate: /usr/sbin/visudo -csf %s
